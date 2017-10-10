@@ -1,0 +1,5 @@
+puts "What?"
+
+answer = gets.chomp
+
+puts "WHADDAYA MEAN #{answer}?!?! YOU'RE FIRED!!"

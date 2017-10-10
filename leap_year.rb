@@ -1,11 +1,18 @@
-puts "Enter starting year"
-year1 = gets.chomp
-puts "Enter ending year"
-year2 = gets.chomp
+puts 'Input a starting year:'
+start_year = gets.chomp
+puts 'Input an ending year:'
+end_year = gets.chomp
+puts ''
 
-while year1 != year2
-	if (year1%4 == 0 and year1%400 == 0)
-	puts year1
-	end
-	year1 += year1
+while start_year.to_i <= end_year.to_i
+
+if start_year.to_f%400 == 0
+puts start_year
+elsif start_year.to_f%100 == 0
+elsif start_year.to_f%4 == 0
+puts start_year
+end
+
+start_year = start_year.to_i + 1
+
 end
